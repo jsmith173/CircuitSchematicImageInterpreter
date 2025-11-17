@@ -104,7 +104,7 @@ def OCRComponents(components, Display=config.display):
         ax.set_xlim((0, FULL_IMAGE.shape[1]))
         ax.set_ylim((FULL_IMAGE.shape[0], 0))
         #ax.set_title('Model: ' + LANG_MODEL + ' | Image: OCR_Boxes.png' + ' | OCR RESULT')
-        ax.imshow(FULL_IMAGE, cmap=plt.cm.gray)
+        #ax.imshow(FULL_IMAGE, cmap=plt.cm.gray)
 
         # plotting box
         for boxes in foundTextAsBoxes_1:

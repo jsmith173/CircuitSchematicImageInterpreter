@@ -11,7 +11,7 @@ from CircuitSchematicImageInterpreter.actions import wireScanHough, objectDetect
 from CircuitSchematicImageInterpreter.ocr import OCRComponents
 
 # Path to circuit image
-PATH = 'Test Images/test_image.tif'
+PATH = 'Test Images/test_image2.tif'
 
 # Import image
 image = importImage(PATH)
@@ -36,7 +36,7 @@ exportComponent(image,
 OCRComponents(components)
 
 # Plot Output
-image.plotAll(junctions, components, HorizWires, VertWires, image)
+#image.plotAll(junctions, components, HorizWires, VertWires, image)
 
 # Get Graph
 G = image.getNetworkGraph(junctions, components, draw=True)
@@ -64,3 +64,6 @@ G.getSpanningTree(draw=True)
 # Create SPICE Netlist
 createNetList(image, components)
 
+# tests
+#image.plotWires(HorizWires, VertWires)
+xx
